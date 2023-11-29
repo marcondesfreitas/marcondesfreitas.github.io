@@ -232,17 +232,15 @@
         height: 50px;
         position: relative;
         float: right;
-        right: -50px;
-        @media (max-width: 600px) {
-            width: 250px;
-            right: 0.1em;
-        }
+        right: -27%;
     }
 
     h1{
         color: white;
         position: relative;
-        top: -25%;
+        font-size: 20px;
+        top: -19%;
+        left: 2%;
     }
 
 }
