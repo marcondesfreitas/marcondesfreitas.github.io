@@ -233,6 +233,10 @@
         position: relative;
         float: right;
         right: -50px;
+        @media (max-width: 600px) {
+            width: 250px;
+            right: 0.1em;
+        }
     }
 
     h1{
