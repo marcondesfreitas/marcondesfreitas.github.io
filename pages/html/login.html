@@ -10,12 +10,10 @@
 
 <body>
 
-
     <form id="loginForm">
-         <h1>LOGIN</h1>
+        <h1>LOGIN</h1>
 
         <input type="email" id="loginEmail" placeholder="Digite seu email..." required>
-
         <input type="password" id="loginPassword" placeholder="Digite sua senha...">
 
         <button type="button" onclick="login()">Login</button>
@@ -24,8 +22,14 @@
 
     </form>
 
-    <script src="../../js/login.js"></script>
+    <!-- Display user information -->
+    <div id="userInfo" style="display: none;">
+        <p id="userName"></p>
+        <p id="userEmail"></p>
+        <img id="userPhoto" src="" alt="User Photo">
+    </div>
 
+    <script src="../../js/login.js"></script>
 
 </body>
 

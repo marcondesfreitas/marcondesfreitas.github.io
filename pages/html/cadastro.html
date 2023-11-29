@@ -13,24 +13,22 @@
     <form id="registrationForm">
         <h1>CADASTRAR</h1>
         <input type="text" id="name" placeholder="Digite seu nome..." required>
-
         <input type="email" id="email" placeholder="Digite seu email..." required>
-
         <input type="password" id="password" placeholder="Digite sua senha..." required>
-
-        
 
         <div class="file-upload-container">
             <label for="fileUpload" class="file-upload-button">Escolher Arquivo</label>
-            <input type="file"id="fileUpload" accept=".png, .jpg, .jpeg" required>
+            <input type="file" id="fileUpload" accept=".png, .jpg, .jpeg" required>
             <span class="file-upload-text">Nenhum arquivo selecionado</span>
         </div>
-        
+
+        <!-- Display user profile image -->
+        <img id="userProfileImage" src="" alt="User Profile Image">
 
         <button type="button" onclick="register()">Cadastrar</button>
-    
-    <a href="./login.html">Já tem sua conta? Entre aqui</a>
-        
+
+        <a href="./login.html">Já tem sua conta? Entre aqui</a>
+
     </form>
 
     <script src="../../js/cadastro.js"></script>

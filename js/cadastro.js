@@ -2,15 +2,7 @@ function register() {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
-    var photoInput = document.getElementById("photo");
-
-    document.addEventListener("DOMContentLoaded", function () {
-        var userProfileImage = localStorage.getItem("userProfileImage");
-
-        if (userProfileImage !== null && userProfileImage !== undefined) {
-            document.getElementById("userProfileImage").src = userProfileImage;
-        }
-    });
+    var photoInput = document.getElementById("fileUpload");
 
     if (photoInput.files.length > 0) {
         var photoFile = photoInput.files[0];
@@ -30,8 +22,8 @@ function register() {
 
             alert("Cadastro realizado com sucesso!");
 
+            // Redirect to login page
             window.location.href = "./login.html";
-
         };
 
         reader.readAsDataURL(photoFile);
@@ -39,3 +31,12 @@ function register() {
         alert("Selecione uma foto antes de cadastrar.");
     }
 }
+
+// Load user profile image on page load
+document.addEventListener("DOMContentLoaded", function () {
+    var userProfileImage = localStorage.getItem("userProfileImage");
+
+    if (userProfileImage !== null && userProfileImage !== undefined) {
+        document.getElementById("userProfileImage").src = userProfileImage;
+    }
+});
