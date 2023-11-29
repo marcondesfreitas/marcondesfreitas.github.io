@@ -9,7 +9,7 @@ body {
     justify-content: center;
 }
 
-form {
+#loginForm {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -17,11 +17,18 @@ form {
     text-align: center;
     width: 80%;
     max-width: 400px;
+    @media (max-width: 600px) {
+        padding-bottom: 1px;
+        
+    }
 }
 
 form label {
     display: block;
     margin: 10px 0;
+    @media (max-width: 600px) {
+        size: 3em;
+    }
 }
 
 form input {
@@ -38,6 +45,7 @@ form button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    
 }
 
 form button:hover {

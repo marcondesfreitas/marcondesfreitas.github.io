@@ -1,6 +1,10 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    @media (max-width: 600px) {
+        margin-left: 0;
+
+    }
 }
 
 .header {
@@ -204,6 +208,9 @@ body {
 
     footer{
         width: 100%;
+        @media(max-width) {
+            width: 100%;
+        }
     }
 
     .footer{

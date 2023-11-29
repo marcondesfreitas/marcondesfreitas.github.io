@@ -17,6 +17,10 @@ form {
     text-align: center;
     width: 80%;
     max-width: 400px;
+    @media (max-width: 600px) {
+        padding: 10px;
+        
+    }
 }
 
 form label {
