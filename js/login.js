@@ -2,6 +2,7 @@ function login() {
     var loginEmail = document.getElementById("loginEmail").value;
     var loginPassword = document.getElementById("loginPassword").value;
 
+
     var user = JSON.parse(localStorage.getItem(loginEmail));
 
     if (user && user.password === loginPassword) {

@@ -22,7 +22,7 @@ function register() {
 
             alert("Cadastro realizado com sucesso!");
 
-            // Redirect to login page
+     
             window.location.href = "./login.html";
         };
 
@@ -32,7 +32,6 @@ function register() {
     }
 }
 
-// Load user profile image on page load
 document.addEventListener("DOMContentLoaded", function () {
     var userProfileImage = localStorage.getItem("userProfileImage");
 

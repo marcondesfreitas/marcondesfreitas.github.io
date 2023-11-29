@@ -25,7 +25,8 @@ body {
 }
 
 .search_div {
-    margin-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
     width: 40%;
 }
 
@@ -36,6 +37,7 @@ body {
     background-color: #f8b95f;
     width: 100%;
     height: 30px;
+    outline: none;
 }
 
 .search_div input::placeholder {
@@ -49,12 +51,23 @@ body {
     border-radius: 50%;
 }
 
+.foto_perfil {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+h1{
+    color: white;
+}
+
 .menu {
     background-color: #f8b95f;
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .menu ul {
@@ -78,7 +91,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 0;
+    margin: 20px 5%;
 }
 
 .body-content .post1,
@@ -86,7 +99,7 @@ body {
 .body-content .post3,
 .body-content .post4,
 .body-content .post6 {
-    width: 98%;
+    width: 100%;
     text-align: center;
 }
 
@@ -99,11 +112,12 @@ body {
     width: 100%;
     display: flex;
     background-color: #f8b95f;
+    height: 90px;
 }
 
 .left {
     width: 50%;
-    text-align: center; 
+    text-align: center;
     color: white;
     left: -15%;
     position: relative;
@@ -111,9 +125,112 @@ body {
 
 .right {
     width: 50%;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .right img {
-    width: 100%;
+    width: 60%;
     height: auto;
+    height: 80px;
+    position: relative;
+}
+
+.lupa {
+    width: 5%;
+}
+
+#userInfo {
+    display: flex;
+    align-items: center;
+}
+
+#logoutButton {
+    z-index: 100;
+    background-color: #f8b95f;
+    width: 90px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.add_btn{
+    
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .logo_div {
+        width: 10%;
+    }
+
+    .profile_div {
+        width: 15%;
+        height: 15%;
+    }
+
+    #logoutButton {
+        z-index: 100;
+        background-color: #f8b95f;
+        width: 50px;
+        border: none;
+        border-radius: 25px;
+        color: white;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    .search_div input {
+        position: relative;
+        height: 20px;
+    }
+
+    .lupa {
+        display: none;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .menu ul li a {
+        padding: 3px;
+        font-size: 0.8em;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    .footer{
+        width: 100%;
+        height: 50px;
+    }
+
+    .apps_footer{
+        width: 180px;
+        height: 50px;
+        position: relative;
+        float: right;
+        right: -50px;
+    }
+
+    h1{
+        color: white;
+        position: relative;
+        top: -25%;
+    }
+
 }
