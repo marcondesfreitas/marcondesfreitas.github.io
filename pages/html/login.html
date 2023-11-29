@@ -4,29 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
     <title>Login</title>
 </head>
 
 <body>
 
-    <form id="loginForm">
-        <label for="loginEmail">Email:</label>
-        <input type="email" id="loginEmail" required>
 
-        <label for="loginPassword">Senha:</label>
-        <input type="password" id="loginPassword" required>
+    <form id="loginForm">
+         <h1>LOGIN</h1>
+
+        <input type="email" id="loginEmail" placeholder="Digite seu email..." required>
+
+        <input type="password" id="loginPassword" placeholder="Digite sua senha...">
 
         <button type="button" onclick="login()">Login</button>
+
+        <a href="./cadastro.html">Ainda nao tem sua conta? Cadastre aqui</a>
+
     </form>
-    <a href="./cadastro.html">Cadastrar</a>
-
-    <div id="userInfo" style="display: none;">
-        <h2>Informações do Usuário</h2>
-        <p><strong>Nome:</strong> <span id="userName"></span></p>
-        <p><strong>Email:</strong> <span id="userEmail"></span></p>
-        <p><strong>Foto:</strong> <img id="userPhoto" style="max-width: 200px; max-height: 200px;"></p>
-    </div>
-
 
     <script src="../../js/login.js"></script>
 
